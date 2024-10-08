@@ -32,10 +32,10 @@
                 inputElement.value = '';
                 resElement.innerHTML = '';
             }else {
-                let numSorteados = []
+                const numSorteados = []
     
                 while(numSorteados.length < inputElement.value) {
-                    let numGerado = Math.floor(Math.random() * 60);
+                    const numGerado = Math.floor(Math.random() * 60);
                     if(! numSorteados.includes(numGerado)) {
                         numSorteados.push(numGerado);
                     };
